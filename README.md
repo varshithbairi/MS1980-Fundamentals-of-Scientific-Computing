@@ -21,11 +21,10 @@ A small 2D molecular-dynamics simulator: 20 soft atoms in a 10 × 10 box. Overla
 | `atomic_toy_model.ipynb` | All the code for Tasks 1–9, with comments. It has already been run, so every table, plot and movie can be seen without running it again. |
 | `pair_forces.c` | C version of the pair force (Task 6). The notebook compiles it with gcc, so it must be in the same folder as the notebook. |
 | `report.pdf` | The project report: model, algorithm, implementation details, verification and all results. |
-| `report.tex` | LaTeX source of the report (it needs the `figures/` folder to compile). |
-| `animations/` | The trajectory movie as GIF and MP4. |
+| `animations/` | The three movies as GIF and MP4: `trajectory_N20` (the 20-atom trajectory), `euler_vs_verlet_dt0.05` (Euler next to Verlet at a big time step) and `conservative_vs_dissipative` (γ = 0 next to γ = 0.5). |
 | `figures/`, `data/` | Made by the notebook when it runs: every plot (PNG), every table (CSV) and `summary.json`. |
 
-The video presentation (15–20 minutes, all four members) is submitted separately.
+The video presentation is submitted separately.
 
 ## Requirements
 
@@ -55,7 +54,7 @@ A full run takes roughly 10–20 minutes on a laptop; the movies and the timing 
 - **Task 1** prints the correctness checks for all 2001 saved steps (d_ij = d_ji, d_ii = 0, no atom is its own neighbour, ‖Σ F_i‖ ≈ 10⁻¹⁶, every atom stays inside the box) and compares a head-on two-atom collision with the exact solution.
 - The Python loop, NumPy, C and cell-list versions of the force are compared with each other; they agree to about 10⁻¹⁵.
 - All random numbers use fixed seeds, so every physics result (energies, energy errors, relaxation times) comes out exactly the same on every computer. Run times and memory numbers (Tasks 5–8) depend on the computer.
-- The main movie is saved as `animations/trajectory_N20.gif` and `.mp4`. The Euler-vs-Verlet and conservative-vs-dissipative movies are shown as GIFs inside the notebook.
+- When the notebook runs, it saves the main movie as `animations/trajectory_N20.gif` and `.mp4`, and shows the Euler-vs-Verlet and conservative-vs-dissipative movies as GIFs inside the notebook. The `.gif` and `.mp4` files of those two movies in `animations/` come from an earlier run of the same code.
 
 ## What is where in the notebook
 
