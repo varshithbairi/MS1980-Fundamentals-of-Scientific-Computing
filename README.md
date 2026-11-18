@@ -81,4 +81,10 @@ A full run takes roughly 10–20 minutes on a laptop; the movies and the timing 
 
 ## Use of AI
 
-We used **Claude** (Anthropic) throughout the project. Claude wrote most of the simulation code (the notebook and `pair_forces.c`) and the analysis for Tasks 1–9 from our prompts and the project handout. It also helped us debug the code on our own computers (64-bit gcc on Windows, Google Colab), produced the figures and movies, drafted the report and the video script, and added the comments in the code. We ran the notebook on our own computers, went through the code and the results for the video, and recorded the presentation. Our prompts and AI sessions are submitted with the project.
+We used Claude as an AI assistance tool during the development of this project for the following purposes:
+
+- **Debugging:** To identify errors, understand issues in the code, and help resolve implementation problems.
+- **Notebook formatting:** To improve the presentation and organization of the Jupyter Notebook, including formatting Markdown cells, structuring explanations, and presenting points in a clear and readable manner.
+- **Report formatting:** To assist with formatting and organizing the project report.
+
+AI assistance was mainly used for debugging, improving readability, and formatting. The implementation, experiments, analysis, and interpretation of results were carried out by the group.
